@@ -1,0 +1,24 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-MESSAGES
+-UNBUFFERED
++EMGRLOG
+irun.log
+-XLSTIME
+1587725816
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx86.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx86.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.15.20.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun	15.20-s038"
+-XLNAME
+./INCA_libs/irun.lnx86.15.20.nc/6133a9c70e2b_7

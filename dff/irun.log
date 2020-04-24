@@ -1,0 +1,71 @@
+irun: 15.20-s038: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s038: Started on Apr 24, 2020 at 11:56:56 BST
+irun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+interface intf_cnt(input logic clk);
+                 |
+ncvlog: *W,RECOME (./interface.sv,1|17): recompiling design unit worklib.intf_cnt:sv.
+	First compiled from line 1 of interface.sv.
+(`include file: ./interface.sv line 1, `include file: test.sv line 2, file: testbench.sv line 5)
+	Top level design units:
+		$unit_0x67f934e9
+		top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /incisiv/15.20/tools/inca/files/ncsimrc
+ncsim> run
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+ * ERROR * DUT count is 0 :: SB count is 0 01
+ * ERROR * DUT count is 0 :: SB count is 0 10
+           DUT count is 0 :: SB count is 0 11
+ * ERROR * DUT count is 0 :: SB count is 0 10
+           DUT count is 0 :: SB count is 0 11
+ * ERROR * DUT count is 0 :: SB count is 0 10
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 11
+ * ERROR * DUT count is 0 :: SB count is 0 01
+ * ERROR * DUT count is 0 :: SB count is 0 01
+ * ERROR * DUT count is 0 :: SB count is 0 01
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 11
+ * ERROR * DUT count is 0 :: SB count is 0 01
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 11
+ * ERROR * DUT count is 0 :: SB count is 0 10
+ * ERROR * DUT count is 0 :: SB count is 0 10
+ * ERROR * DUT count is 0 :: SB count is 0 01
+           DUT count is 0 :: SB count is 0 11
+           DUT count is 0 :: SB count is 0 00
+ * ERROR * DUT count is 0 :: SB count is 0 10
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+           DUT count is 0 :: SB count is 0 00
+ * ERROR * DUT count is 0 :: SB count is 0 01
+Simulation complete via implicit call to $finish(1) at time 430 NS + 2
+./test.sv:3 program testcase(intf_cnt intf);
+ncsim> exit
+TOOL:	irun	15.20-s038: Exiting on Apr 24, 2020 at 11:56:57 BST  (total: 00:00:01)
