@@ -1,0 +1,14 @@
+<Command name="schRTLInfo"  delimiter="."  >
+<RTLBlock >
+<RTLInfo   name="curr_state_0"  type="2"  fileName="../rtl/verilog/fault_sm.v"  >
+    <Seg beginLine="149"  endLine="226"  />
+  </RTLInfo>
+<Instance name="testbench.dut.fault_sm0"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="curr_state_enc_1"  type="2"  fileName="../rtl/verilog/tx_dequeue.v"  >
+    <Seg beginLine="226"  endLine="618"  />
+  </RTLInfo>
+<Instance name="testbench.dut.tx_dq0"  />
+</RTLBlock>
+</Command>

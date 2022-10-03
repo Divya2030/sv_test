@@ -1,0 +1,295 @@
+Command: vcs -full64 +vcs+lic+wait -sverilog -R -override_timescale=1ps/1ps +ntb_random_seed_automatic \
+-debug_access+all ../rtl/verilog/fault_sm.v ../rtl/verilog/generic_fifo_ctrl.v ../rtl/verilog/generic_fifo.v \
+../rtl/verilog/generic_mem_medium.v ../rtl/verilog/generic_mem_small.v ../rtl/verilog/meta_sync_single.v \
+../rtl/verilog/meta_sync.v ../rtl/verilog/rx_data_fifo.v ../rtl/verilog/rx_dequeue.v \
+../rtl/verilog/rx_enqueue.v ../rtl/verilog/rx_hold_fifo.v ../rtl/verilog/sync_clk_core.v \
+../rtl/verilog/sync_clk_wb.v ../rtl/verilog/sync_clk_xgmii_tx.v ../rtl/verilog/tx_data_fifo.v \
+../rtl/verilog/tx_dequeue.v ../rtl/verilog/tx_enqueue.v ../rtl/verilog/tx_hold_fifo.v \
+../rtl/verilog/wishbone_if.v ../rtl/verilog/xge_mac.v +incdir+../rtl/include ../testbench/verilog/xge_mac_interface.sv \
+../testbench/verilog/tb_xge_mac.sv ../testbench/verilog/packet.sv ../testbench/verilog/driver.sv \
+../testbench/verilog/monitor.sv ../testbench/verilog/coverage.sv ../testbench/verilog/scoreboard.sv \
+../testbench/verilog/env.sv -cm line+cond+branch+fsm+tgl -cm path -lca -cm_log ./coverage.log \
+-cm_dir ./COVERAGE ../testcases/zero_ipg_packet/testcase.sv -l logs/coverage.log \
+
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Thu Sep  8 23:31:58 2022
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '../rtl/verilog/fault_sm.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/fault_sm.v'.
+Parsing design file '../rtl/verilog/generic_fifo_ctrl.v'
+Parsing design file '../rtl/verilog/generic_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/generic_fifo.v'.
+Parsing design file '../rtl/verilog/generic_mem_medium.v'
+Parsing design file '../rtl/verilog/generic_mem_small.v'
+Parsing design file '../rtl/verilog/meta_sync_single.v'
+Parsing design file '../rtl/verilog/meta_sync.v'
+Parsing design file '../rtl/verilog/rx_data_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_data_fifo.v'.
+Parsing design file '../rtl/verilog/rx_dequeue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_dequeue.v'.
+Parsing design file '../rtl/verilog/rx_enqueue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing design file '../rtl/verilog/rx_hold_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_hold_fifo.v'.
+Parsing design file '../rtl/verilog/sync_clk_core.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_core.v'.
+Parsing design file '../rtl/verilog/sync_clk_wb.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_wb.v'.
+Parsing design file '../rtl/verilog/sync_clk_xgmii_tx.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_xgmii_tx.v'.
+Parsing design file '../rtl/verilog/tx_data_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_data_fifo.v'.
+Parsing design file '../rtl/verilog/tx_dequeue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing design file '../rtl/verilog/tx_enqueue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing design file '../rtl/verilog/tx_hold_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_hold_fifo.v'.
+Parsing design file '../rtl/verilog/wishbone_if.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/wishbone_if.v'.
+Parsing design file '../rtl/verilog/xge_mac.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/xge_mac.v'.
+Parsing design file '../testbench/verilog/xge_mac_interface.sv'
+Parsing design file '../testbench/verilog/tb_xge_mac.sv'
+Parsing design file '../testbench/verilog/packet.sv'
+Parsing design file '../testbench/verilog/driver.sv'
+Parsing included file '../rtl/include/timescale.v'.
+Back to file '../testbench/verilog/driver.sv'.
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../testbench/verilog/driver.sv'.
+Parsing design file '../testbench/verilog/monitor.sv'
+Parsing design file '../testbench/verilog/coverage.sv'
+Parsing design file '../testbench/verilog/scoreboard.sv'
+Parsing design file '../testbench/verilog/env.sv'
+Parsing design file '../testcases/zero_ipg_packet/testcase.sv'
+Top Level Modules:
+       testbench
+TimeScale is 1 ps / 1 ps
+VCS Coverage Metrics Release R-2020.12-SP1-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+
+Warning-[VCM-PCPI] Path Coverage performance impact
+  The switch "-cm path" can impact performance when enabled on entire design. 
+  Please enable path coverage for only selected modules or hierarchies using 
+  the -cm_hier <hier_config>. Please refer to VCS Coverage document for usage 
+  of "-cm_hier"
+
+
+Warning-[CMPATH-DEPRE] Path Coverage Deprecation
+  The '-cm path' option will not be supported in future releases, and 
+  specifying it on the command line will cause an error.
+  It is recommended that you remove it from your command line.
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+13 modules and 0 UDP read.
+recompiling module testcase
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib -L/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _3276_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-lreader_common /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libBA.a -luclinative \
+/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli \
+-Wl,-no-whole-archive          /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/csrc' \
+
+Command: /home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/./simv +vcs+lic+wait +ntb_random_seed_automatic -cm_runsilent -cm line+cond+branch+fsm+tgl -cm path -lca -cm_dir ./COVERAGE -a logs/coverage.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Sep  8 23:32 2022
+NOTE: automatic random seed used: 1951127627
+
+Warning-[CMPATH-DEPRE] Path Coverage Deprecation
+  The '-cm path' option will not be supported in future releases, and 
+  specifying it on the command line will cause an error.
+  It is recommended that you remove it from your command line.
+
+VCD+ Writer R-2020.12-SP1-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+
+Sending 4 packets...
+Transmit packet with length:          85
+ipg:           0
+Transmit packet with length:          76
+ipg:           0
+Transmit packet with length:          85
+ipg:           0
+Transmit packet with length:          97
+
+
+------------------------
+Received Packet
+------------------------
+24f4b608d272aa52
+ca2f6eb08962f129
+7397777c92e0f4fb
+febe6f9406126c75
+c91bbbd4c0cdc4b2
+fb131617d1c3ff04
+ipg:           0
+c2486d766189977c
+bc1dc38cb1c85cf8
+2a8600d77d3a104e
+8db05b0b16d303a5
+ecd9c05a763f5400
+------------------------
+
+
+
+
+------------------------
+Received Packet
+------------------------
+88ff54f37105a826
+267e8601c3ca9f09
+493ad870048475bc
+f836fd27a21358b6
+90df76e6d6ae477c
+fbc24ca209afeb54
+bc2ac55fac7ffb94
+c37213990599cede
+291a3b1ad775f068
+4223dd50a66488a3
+------------------------
+
+
+
+
+------------------------
+Received Packet
+------------------------
+15d883c7e8af863c
+9c3c5b594073c2b2
+e3087dbbcb02d06f
+68ce4a7fe10d2728
+514f1d01aa2d3ec6
+f2d3904c73c04f55
+96aa0b5b72d6a4fd
+520adade489113fb
+1ee3e6c699d63b17
+5f9c7465104d37ea
+7c17095c14e36774
+------------------------
+
+
+
+
+------------------------
+Received Packet
+------------------------
+bb09d34069f8d9a4
+7fac2e037a7cf3a9
+111f485ed6b5fa89
+696f411bc9527f80
+3a8539f8e9bf8510
+d4f1f210ede22ea4
+729fa5443b13ce7d
+f4fc9244a1125927
+9c6f0eb46f55c4b2
+64823921914ad179
+3db47b53bf28b24d
+f0aef4565e2b0e50
+1523d85518fd0707
+------------------------
+
+
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------
+SCOREBOARD RESULT
+----------------------------------------------
+Number of packets transmitted: 4
+Number of packets received   : 4
+Number of packets checked    : 4
+All packets recieved sucessfully.
+----------------------------------------------
+
+$finish called from file "../testbench/verilog/env.sv", line 50.
+
+TESTCASE: ----------------- ZERO IPG PACKET -----------------------
+
+TESTCASE: ----------------- End Of Simulation -----------------
+TESTCASE: Number of mismatched packets :  0
+TESTCASE: ---------------------- NO BUG: TESTPASS -----------------------
+
+$finish at simulation time              6496000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, path, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6496000 ps
+CPU Time:      0.420 seconds;       Data structure size:   0.1Mb
+Thu Sep  8 23:32:00 2022
+CPU time: .976 seconds to compile + .377 seconds to elab + .205 seconds to link + .466 seconds in simulation

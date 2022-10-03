@@ -1,0 +1,264 @@
+Command: vcs -full64 +vcs+lic+wait -sverilog -R -override_timescale=1ps/1ps +ntb_random_seed_automatic \
+-debug_access+all ../rtl/verilog/fault_sm.v ../rtl/verilog/generic_fifo_ctrl.v ../rtl/verilog/generic_fifo.v \
+../rtl/verilog/generic_mem_medium.v ../rtl/verilog/generic_mem_small.v ../rtl/verilog/meta_sync_single.v \
+../rtl/verilog/meta_sync.v ../rtl/verilog/rx_data_fifo.v ../rtl/verilog/rx_dequeue.v \
+../rtl/verilog/rx_enqueue.v ../rtl/verilog/rx_hold_fifo.v ../rtl/verilog/sync_clk_core.v \
+../rtl/verilog/sync_clk_wb.v ../rtl/verilog/sync_clk_xgmii_tx.v ../rtl/verilog/tx_data_fifo.v \
+../rtl/verilog/tx_dequeue.v ../rtl/verilog/tx_enqueue.v ../rtl/verilog/tx_hold_fifo.v \
+../rtl/verilog/wishbone_if.v ../rtl/verilog/xge_mac.v +incdir+../rtl/include ../testbench/verilog/xge_mac_interface.sv \
+../testbench/verilog/tb_xge_mac.sv ../testbench/verilog/packet.sv ../testbench/verilog/driver.sv \
+../testbench/verilog/monitor.sv ../testbench/verilog/coverage.sv ../testbench/verilog/scoreboard.sv \
+../testbench/verilog/env.sv ../testcases/missing_eop/testcase.sv -l logs/missing_eop.log \
+
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Thu Sep  8 23:20:41 2022
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Parsing design file '../rtl/verilog/fault_sm.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/fault_sm.v'.
+Parsing design file '../rtl/verilog/generic_fifo_ctrl.v'
+Parsing design file '../rtl/verilog/generic_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/generic_fifo.v'.
+Parsing design file '../rtl/verilog/generic_mem_medium.v'
+Parsing design file '../rtl/verilog/generic_mem_small.v'
+Parsing design file '../rtl/verilog/meta_sync_single.v'
+Parsing design file '../rtl/verilog/meta_sync.v'
+Parsing design file '../rtl/verilog/rx_data_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_data_fifo.v'.
+Parsing design file '../rtl/verilog/rx_dequeue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_dequeue.v'.
+Parsing design file '../rtl/verilog/rx_enqueue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing design file '../rtl/verilog/rx_hold_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_hold_fifo.v'.
+Parsing design file '../rtl/verilog/sync_clk_core.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_core.v'.
+Parsing design file '../rtl/verilog/sync_clk_wb.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_wb.v'.
+Parsing design file '../rtl/verilog/sync_clk_xgmii_tx.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_xgmii_tx.v'.
+Parsing design file '../rtl/verilog/tx_data_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_data_fifo.v'.
+Parsing design file '../rtl/verilog/tx_dequeue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing design file '../rtl/verilog/tx_enqueue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing design file '../rtl/verilog/tx_hold_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_hold_fifo.v'.
+Parsing design file '../rtl/verilog/wishbone_if.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/wishbone_if.v'.
+Parsing design file '../rtl/verilog/xge_mac.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/xge_mac.v'.
+Parsing design file '../testbench/verilog/xge_mac_interface.sv'
+Parsing design file '../testbench/verilog/tb_xge_mac.sv'
+Parsing design file '../testbench/verilog/packet.sv'
+Parsing design file '../testbench/verilog/driver.sv'
+Parsing included file '../rtl/include/timescale.v'.
+Back to file '../testbench/verilog/driver.sv'.
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../testbench/verilog/driver.sv'.
+Parsing design file '../testbench/verilog/monitor.sv'
+Parsing design file '../testbench/verilog/coverage.sv'
+Parsing design file '../testbench/verilog/scoreboard.sv'
+Parsing design file '../testbench/verilog/env.sv'
+Parsing design file '../testcases/missing_eop/testcase.sv'
+Top Level Modules:
+       testbench
+TimeScale is 1 ps / 1 ps
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling module testcase
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib -L/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _16514_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive          /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/csrc' \
+
+Command: /home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/./simv +vcs+lic+wait +ntb_random_seed_automatic -a logs/missing_eop.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Sep  8 23:20 2022
+NOTE: automatic random seed used: 643823163
+VCD+ Writer R-2020.12-SP1-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+
+Sending 4 packets...
+Transmit packet with length:          83
+
+
+------------------------
+Received Packet
+------------------------
+ed6ae6f3556f2ff9
+839c1e29b465a6a3
+c0dc103705c5d112
+bf3782c40a43452a
+b0bca4ab949e4f0b
+ipg:          36
+2ed3a5be09eb2c4e
+Transmit packet with length:          83
+30cf143eb7594600
+39b0b1f249475be8
+445bf9d829b173f6
+856ecfe9665c49e3
+------------------------
+
+
+
+
+------------------------
+Received Packet
+------------------------
+1c04570b60360acc
+9df03c9b0a08ef4a
+fd0b78dbe9cb0f79
+a53c93b312195b1e
+737e1bd22c2779a8
+f84ce1f5a5a3c0f1
+ffaa675d1f1389ca
+b689156ab0654190
+ad6aa5b0751d7be9
+9f897894431bc56d
+878cc5009e86cbfd
+------------------------
+
+
+ipg:          50
+Transmit packet with length:          98
+
+
+------------------------
+Received Packet
+------------------------
+9574d92c786690e0
+78b657be6a249238
+b88498ff0b9bc8ab
+c10d91727cb3cae4
+6cbfb7906d93f5dc
+0644d5ae3d38026d
+6c54f291b56f5777
+b85aa4f04a89d23e
+762d3e590146658d
+c034e14b5e9c1f51
+7adfd82bb5f9a224
+83275a7b5e6691f8
+3932b196ff4afd07
+------------------------
+
+
+ipg:          42
+Transmit packet with length:          75
+
+
+------------------------
+Received Packet
+------------------------
+3fdf4db69c6933e1
+787e640ecc7cbd9b
+d4bbb7447ee611d0
+21fd0dbd23fc0bbb
+eede75237c0e3c03
+23d871a4f9d4ac75
+370fbeeea79f20a7
+df327c67aa340700
+879a5bd903836d55
+------------------------
+
+
+ipg:          42
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------
+SCOREBOARD RESULT
+----------------------------------------------
+Number of packets transmitted: 4
+Number of packets received   : 4
+Number of packets checked    : 4
+All packets recieved sucessfully.
+----------------------------------------------
+
+$finish called from file "../testbench/verilog/env.sv", line 50.
+
+TESTCASE: ----------------- NEGATIVE TESTCASE -----------------------
+
+TESTCASE: ----------------- MISSING EOP -----------------------
+
+TESTCASE: ----------------- End Of Simulation -----------------
+TESTCASE: Number of mismatched packets :  0
+TESTCASE: ---------------------- NO BUG: TESTPASS -----------------------
+
+$finish at simulation time             14112000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 14112000 ps
+CPU Time:      0.370 seconds;       Data structure size:   0.1Mb
+Thu Sep  8 23:20:43 2022
+CPU time: .787 seconds to compile + .372 seconds to elab + .200 seconds to link + .414 seconds in simulation

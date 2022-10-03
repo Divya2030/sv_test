@@ -1,0 +1,758 @@
+Command: vcs -full64 +vcs+lic+wait -sverilog -R -override_timescale=1ps/1ps +ntb_random_seed_automatic \
+-debug_access+all ../rtl/verilog/fault_sm.v ../rtl/verilog/generic_fifo_ctrl.v ../rtl/verilog/generic_fifo.v \
+../rtl/verilog/generic_mem_medium.v ../rtl/verilog/generic_mem_small.v ../rtl/verilog/meta_sync_single.v \
+../rtl/verilog/meta_sync.v ../rtl/verilog/rx_data_fifo.v ../rtl/verilog/rx_dequeue.v \
+../rtl/verilog/rx_enqueue.v ../rtl/verilog/rx_hold_fifo.v ../rtl/verilog/sync_clk_core.v \
+../rtl/verilog/sync_clk_wb.v ../rtl/verilog/sync_clk_xgmii_tx.v ../rtl/verilog/tx_data_fifo.v \
+../rtl/verilog/tx_dequeue.v ../rtl/verilog/tx_enqueue.v ../rtl/verilog/tx_hold_fifo.v \
+../rtl/verilog/wishbone_if.v ../rtl/verilog/xge_mac.v +incdir+../rtl/include ../testbench/verilog/xge_mac_interface.sv \
+../testbench/verilog/tb_xge_mac.sv ../testbench/verilog/packet.sv ../testbench/verilog/driver.sv \
+../testbench/verilog/monitor.sv ../testbench/verilog/coverage.sv ../testbench/verilog/scoreboard.sv \
+../testbench/verilog/env.sv ../testcases/oversize_packet/testcase.sv -l logs/oversize_packet.log \
+
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Thu Sep  8 23:20:46 2022
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Parsing design file '../rtl/verilog/fault_sm.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/fault_sm.v'.
+Parsing design file '../rtl/verilog/generic_fifo_ctrl.v'
+Parsing design file '../rtl/verilog/generic_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/generic_fifo.v'.
+Parsing design file '../rtl/verilog/generic_mem_medium.v'
+Parsing design file '../rtl/verilog/generic_mem_small.v'
+Parsing design file '../rtl/verilog/meta_sync_single.v'
+Parsing design file '../rtl/verilog/meta_sync.v'
+Parsing design file '../rtl/verilog/rx_data_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_data_fifo.v'.
+Parsing design file '../rtl/verilog/rx_dequeue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_dequeue.v'.
+Parsing design file '../rtl/verilog/rx_enqueue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/rx_enqueue.v'.
+Parsing design file '../rtl/verilog/rx_hold_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/rx_hold_fifo.v'.
+Parsing design file '../rtl/verilog/sync_clk_core.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_core.v'.
+Parsing design file '../rtl/verilog/sync_clk_wb.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_wb.v'.
+Parsing design file '../rtl/verilog/sync_clk_xgmii_tx.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/sync_clk_xgmii_tx.v'.
+Parsing design file '../rtl/verilog/tx_data_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_data_fifo.v'.
+Parsing design file '../rtl/verilog/tx_dequeue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/tx_dequeue.v'.
+Parsing design file '../rtl/verilog/tx_enqueue.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D64.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/CRC32_D8.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing included file '../rtl/include/utils.v'.
+Back to file '../rtl/verilog/tx_enqueue.v'.
+Parsing design file '../rtl/verilog/tx_hold_fifo.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/tx_hold_fifo.v'.
+Parsing design file '../rtl/verilog/wishbone_if.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/wishbone_if.v'.
+Parsing design file '../rtl/verilog/xge_mac.v'
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../rtl/verilog/xge_mac.v'.
+Parsing design file '../testbench/verilog/xge_mac_interface.sv'
+Parsing design file '../testbench/verilog/tb_xge_mac.sv'
+Parsing design file '../testbench/verilog/packet.sv'
+Parsing design file '../testbench/verilog/driver.sv'
+Parsing included file '../rtl/include/timescale.v'.
+Back to file '../testbench/verilog/driver.sv'.
+Parsing included file '../rtl/include/defines.v'.
+Back to file '../testbench/verilog/driver.sv'.
+Parsing design file '../testbench/verilog/monitor.sv'
+Parsing design file '../testbench/verilog/coverage.sv'
+Parsing design file '../testbench/verilog/scoreboard.sv'
+Parsing design file '../testbench/verilog/env.sv'
+Parsing design file '../testcases/oversize_packet/testcase.sv'
+Top Level Modules:
+       testbench
+TimeScale is 1 ps / 1 ps
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling module testcase
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib -L/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _18957_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive          /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/csrc' \
+
+Command: /home/av00165/missing_eop/lab-project-10gEthernetMAC/scripts/./simv +vcs+lic+wait +ntb_random_seed_automatic -a logs/oversize_packet.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Sep  8 23:20 2022
+NOTE: automatic random seed used: 1999659933
+VCD+ Writer R-2020.12-SP1-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+
+Sending 4 packets...
+Transmit packet with length:         768
+
+
+------------------------
+Received Packet
+------------------------
+2ed050e21bd4104d
+bb8290ffb2b70c49
+6953991322b020d6
+790b52c119a9e7c1
+8137b5ba13ec6e42
+816b35a18283642c
+1144a094b4c365a8
+373b8fd5b841ae91
+6041c5ad524b7f15
+6d3c3f6e556ec340
+8b11018feadb9c9d
+47e0732fb6f34650
+12d18b5422878dc6
+d7ddc35f917bfb9e
+cafc30f771c4e475
+ee9135f21b4fbd43
+f21bce11485ddc69
+daf4e26d5f4b3e63
+d10b100e5638b3f8
+1fb8137cb266bc9b
+a692b35cf9fa0fe1
+c5fdde025996530e
+9a0bcab8072165fc
+78b604774e5ce414
+7780939e29ade6f3
+2c4a365d6f84034c
+3793e8cbdb6a4d23
+37120e0b67a1a75c
+ef31826a0a2ad97c
+b71d059e7ffebe5e
+7a1407da39d8bacc
+11b05c0717cc068c
+150d4bb91406f906
+c3a2721bca950d8c
+783ee5963557be22
+3e79ea4f10cd5263
+d7c8f44f526009a9
+34e2ae7fb6e1f8a4
+7a3c98a00e2f54f2
+fc4920b23e860da7
+9e6311af0bb03b1f
+3c649bdca67fee67
+29fa5527c8d34d06
+73808af97aa90d06
+09a5dbb5cb443c01
+05d818553a33c3e9
+075bfab7c7cbb1e3
+35bbd89d3529a10f
+daa54fecc7626fd9
+9a8b20c4c9069818
+103a6f2f6dff4980
+13bdb0add7e7d183
+8cc4a02becaa6776
+104ae84db25f7f5e
+74aa4df6bae6a238
+940c9f08519885da
+d24976f5d9420a8c
+433a4a8d202123aa
+21a077f7a8cea413
+6cb7e7d23622d116
+57187366cd94b80e
+f7ab75243e26a80f
+084744d352baef49
+54f8b6adbe2c448f
+732522bd77f8995e
+22a581180ef6df1a
+09b8acc13e474b7c
+2e0b0d5e292fa36f
+bc456ff671ab2b7a
+5f33045f9f3d655c
+935be79e1ddf0536
+694f01d88172b63f
+6a476e618fae32e8
+8b2ce16ba6d36c66
+8a60c6147779d00e
+63142354275ba65f
+b37cfe9b32ef2a30
+a9f8575a3c52c831
+99b9f2aab851f50b
+942b70017467edf0
+0f53598bb9ccc929
+9ee4e8d40a113f81
+1d65423e784db6e2
+da8c786ee353e09d
+bbe15d8ba50fa45d
+9759dabbccd82acb
+439cf6ba13341e9f
+0b9f88032c2b8e38
+33ce85ddd4af28ac
+7a91b8c04f6948f1
+b39004880d26b76d
+6be6a7f12026e9d0
+228d6fe820858852
+70f0ac54e39347b3
+6369b0c6f7928561
+e2a92977e60205c3
+------------------------
+
+
+ipg:          49
+Transmit packet with length:        1267
+
+
+------------------------
+Received Packet
+------------------------
+4caaf9f34adfb504
+a81ee9d544c6505b
+abd6d9fc9e406c7b
+79b022b376992d0e
+a80ad438c9c92cea
+77836b9341e5b912
+dfbc894e474f64a4
+a270ee7c8cec63e0
+fee27336ec519846
+0a8798656a144f7d
+e696527822300e75
+ea489cd181b2855c
+27e729ba096876eb
+8f6753bdfc426c1e
+e2299450497e4432
+38ddcbffd82bf896
+443182b18422e910
+a146961aca30f6c4
+2be5f3eadd4dd0fa
+a68061bc5986d4a9
+5d4cbe0d1156f292
+bf522fffff332f52
+c026c12c410f96f5
+cab7e815753cf17a
+614ed9f1420e4e7a
+1379a3faa1958a86
+5b6cba1572453332
+5bfa97e92f9b3d6a
+e8d298ebe49569e9
+d301d5a60fe4b02a
+63975f5cc85d0f74
+13c2d17da121a1fd
+0d88fd42aa27ea91
+14785af5a330c2f9
+dbcc16b52014c797
+29410af72c45d13d
+d968faad43347539
+3738567126cd26d6
+278af81a04df081e
+8989409a58f53834
+2092ab9a42ebc17f
+718d7e6cd6dffa31
+d075b03bf7ddfb06
+857d2e83f2aacb9f
+49079d6be04571b3
+721bce1c2d7f2ba4
+a157dae179ecffba
+99a3e2eec5d3be29
+e6baaa4dcc662909
+883d723b9285f904
+0c7d82437e125881
+0f2630ef2efae52b
+a8d93a4dc4726c76
+fb32a0506999b8ed
+bc8dcad652bcc788
+4757292f5bdafa84
+1f8022a5a0f4b19e
+886b2a60ac74afc2
+d9a1df6758fc3339
+4fe971583a6ca275
+af8651bf08298452
+2aaf09e66f965ea6
+4e35bdf36f828b1f
+e8bb08ddfa2336e6
+815a2adc33f6465e
+674304143e852f5e
+90c26b00e7c8548a
+151942058d3ce745
+a9951001f687d69f
+05019eb1ce12b82d
+ca5ad7e7a2f4fcd5
+b387fcdab11c0d21
+532e340938e35748
+b6cb7b19af4028e6
+3015c83da0929526
+0c5ce7ea64fe3fab
+1f090da707674729
+c17df92b8ca08131
+51b0246917127ebe
+9ea49889b01d2f92
+d34708c64f18dacc
+ffe33f587c815a20
+3e412eef62a72b90
+acc97704405e1cf7
+8213120fcf27a6a0
+a36589f4aa8af027
+f147748075b0e36e
+5f251d7d99350874
+36583115b788729d
+fd4b19996a2e22dc
+f948d6e76e6af95d
+d851c8bddc8d2b66
+164a00211095197c
+18fe6e9ab9230d0c
+a5bcff8e75557fce
+eb58947e3d74ac18
+1e5b5354e808e080
+548659a5eaa80146
+749a57f2b0d0d2f8
+f55d3dbe809965f4
+67906b9a86032c6d
+974ade67c2e8db3c
+b3808e524f16549d
+fbaa0da3bb81109e
+100c21d79124c792
+f0aa6de1f75bd1a4
+fe44a6c70b1ace4b
+18854cb9df8259b4
+bfd3e21094e891f3
+6bc774707a9ecb85
+45d5077c1eaa8df2
+bb7e6465ae0c08ea
+544a9a02a32e8911
+b37d4d276aba0010
+dc4e2d86cbbf5f61
+ce36a5dad8d18d23
+40b986c2b180f0f1
+61a032d07b69ca3b
+97cdcc6c127a8f39
+77d4f0865a0157c3
+1eb96b12909da0d8
+99ff0b10e8a0b516
+68fe05090eb70047
+6c6d8f2643a0c04f
+eb43f19f1f67c90d
+f19762d91ed4041f
+db31e3451310cf33
+177b50b376b928b7
+95e543b810380d19
+aa11093c0d076509
+d13c6a1c7e85b57a
+24e8a92c3cfb546c
+e2e2fcfb0bd3f397
+2e0b6206c5e7cfc6
+9bb4e3ecb1af867d
+4ff5b04f3b16d9ba
+7c60177a9708144f
+add1e1df286dd7d2
+507a2df462e89904
+6174e644f9ae211e
+f010eb1502391fa4
+f12fd8f1f966d401
+7ce49210a6d5eb6c
+047c0bceb3fab0a6
+5a2cc52b728aebc8
+0d4c3caff84c952d
+128149e8bcf9b115
+cff0caf9ed5ca33e
+c72c33708bf05163
+20956d9f2f680a59
+fc547f1736fdcb61
+6d85d5d75c158f4d
+b06431779b0385f2
+be0375dae3fdf829
+7126691380263071
+560c224e7939d3ed
+557ca26889d5924a
+0f7431333da90d4d
+7bbfa1b58a46c9fd
+------------------------
+
+
+ipg:          43
+Transmit packet with length:        1131
+
+
+------------------------
+Received Packet
+------------------------
+ebe3f19fedff14cc
+fb8f20d0f21fc9d0
+79c5568cc89c905e
+417bcd30b4fc1e0c
+dc55e873b49a8425
+c5b73fbb678b8e60
+debeadb908e0c598
+63098b6b57980f8b
+e0d3697380497635
+0612605ad1464886
+8402d3aef1f22168
+922625b45e90e6cf
+d00a0db9efe8af2d
+bb571aa722e93416
+c81a5424e36f9958
+cf9b659e61de8290
+33ce7578bd8b2618
+d9f4bda925e0562e
+3c232e599d2a35ab
+9349e5c0dba1e5db
+e1be62c219d9f274
+5782a2720f4a6eda
+ac00cc813dadf765
+82a25b7afb1b89ab
+22790dd5ad105c13
+1fd535ade24664a0
+5175b895c5186a64
+6ac5d3395d010b7f
+e9386ab219be5cb2
+87ff1d1dc2548565
+f30a63d5e7866368
+4524400293b36b85
+b8df46a4a5811bde
+05f4d130ff327fe2
+cfaac5bddcc75876
+5d424383dc29d9bd
+ec7e503f205d45e4
+47aa34a558361332
+ed31016c53b09178
+ed01f25eed68856a
+0199fc0057367474
+39d5ea467a0806e3
+d46f611d3e0691bc
+ef97051775a5f0ad
+3caebd5c00f27dab
+b55795f3e30745ac
+6a5ee7c827cb8bf6
+a554e429f7fc9bc9
+72c11bedeaaa5267
+aaf9a23eb9fbd40f
+6b41fab19849133a
+057d82564fbd131e
+1319bbeacd3a9212
+1a2e49a06936a902
+3a5f8744e533e106
+0258eca60e26fa8f
+11617c075ca47d64
+b62cf0bb9c6a69d8
+791008987df6333c
+cf6c0060ec8089d4
+0a046c068b880ea0
+bb49525fe7a93847
+a935944280629ebf
+1891afa11a87d91f
+ceec5496219a70b2
+a5a6b3354151ebba
+3c6ce922c1a67d7f
+e2aab4dc87b04cba
+d0af71714105849b
+21b8e372fd6bd9c1
+27e5e8016c9fbbbb
+29d3fb40cc251277
+211b35a763b72c34
+a036da3ec2feda4c
+b5e647b90df939cb
+11dfbc09fc7b905f
+0d59aaa7211db169
+adb394945c454f1d
+cd60df7127ea18ff
+1c6fc39c33541d3f
+748c8f7b62133901
+18607cdefa07abd0
+69dd3ffc5a2285d1
+141308d7e28e0571
+736ec2b6c96e00e6
+28f24b0a153db75c
+9b75bc3ec7aab319
+3662c71d5888dca3
+7c58035ec5d969c7
+ccb6647eaa1a88cd
+6625bba8cc589326
+87622dcb3f08975d
+ea9eadb335a6ab12
+9b52546a2139d497
+ee9c55c8fea27b77
+383640184596a067
+e66829a423e93734
+91c860b4cbb382e3
+eb0f52988d353c3a
+c13e53b6fbb42db2
+9084d0b854e4902e
+de28fec61f725c88
+bd71a1b70f8cd440
+69fdaae579d5e895
+a806ad910ddfafa9
+94e69689049a0c3b
+e5bbc9a8d391b9ed
+f14c68a5821ff7e7
+c13158c0a5a31cbf
+3db270a80e60baed
+1c44f4ecbaf68ed8
+8ad1a6f48c373b74
+2bab20fd063ce3dc
+8f31baf8f464d460
+077e47d81fe38e67
+562c52f35e784f28
+742a0ec508b7b9be
+a3b1d9df4a93e0ae
+0e8360e9241979eb
+cdb4618ad5e194b5
+90c85656eaf1b6a5
+a74c56f05fb3c7af
+579efdf3067568d5
+c7e51f1fbc2aa8cd
+1ad080982aeebd97
+14e650cf6070cf5b
+4a4e3cdc57ca0723
+2eb51770f16a5616
+f398e65175d05665
+ca165e1637264499
+2796d69c1bd92575
+7d5e4268d7afa296
+dcdce3de50b57b5d
+540f5532f2125d68
+46a8dc597961612b
+ipg:          34
+Transmit packet with length:        1135
+608d0698f7d3bde3
+a0e6f44ae963e659
+ff75121da0049c67
+05d09d4354d4b8e5
+5fffd4b3a5850579
+22e4cf8d3b993e46
+dc4214a3857231fd
+------------------------
+
+
+
+
+------------------------
+Received Packet
+------------------------
+71384f2f72dd9c85
+aa6645963015f97b
+0aee033bfe77a34f
+a676eb6a2a096f19
+b7f7266f7a5ea77b
+605892ab4d801b48
+d3f4e3e7178060ed
+795c30922d7b57aa
+a1f9f44b584401b3
+0a5e4dd13faa6f67
+60ae4d11f9990bb8
+e0e7d79446d713ea
+63eab795a0c14465
+e43a0a508dff8ee3
+7a43232b6a3e2ef8
+6119cb5f07728abf
+e1a3eeed865e1253
+66cf81a5bcd44152
+ba113043c750ef16
+46cb674a0aff731d
+77b34281f2562f13
+68531a55e4c53fb6
+7d01e4a3df2d4192
+843630e6429b5292
+ba0d7b6398c195ee
+bf021fd2d0649fdc
+5b1aa3af9824f7a9
+cee29a87ff6c561f
+2a6349d4cfe159e4
+034447442a03a923
+868fa98f5d92fb07
+6e78fe859587afcc
+4890548ff6390803
+3015c8edeab2de49
+d661d4a5f53d6623
+232cf1189a1839c1
+29c6cb74533c907a
+ed682fdfc35345ff
+edb0732eb9f941d7
+585412d142e2ba61
+0f3ce7373cca66c0
+ce91d227411665e7
+e489d98731c5f71d
+ff629e7c56f554cf
+0836b421cef1cc66
+734369e231300f0f
+28a5a70b71164115
+f3fac4ddcb8f3774
+c5e15003e0a15b17
+d6749c6ff446e8d1
+ae59333fbaf02387
+94f05a4d32fd242e
+1bea6a669f9b3000
+f216370dc98822f9
+818d324c37ff30c8
+df030ba5daffe64d
+ad4b4f1e8021b443
+12590e13310b510a
+6d0f78f5587c6954
+ae2400c72f1363ae
+e72a5fe3142bd8b7
+193f2e7967091c5c
+4bf1ad5e51548a50
+ea25584425f0ce6e
+daf6c0591d13ec98
+cefa2ac768b11ce7
+7fb7dd900a03b0d3
+81dd02a957750c14
+009eecb5e4dc1693
+ba1eef37d30a34fc
+8eb6ed2429748f98
+7c0f0d00f4f50618
+52df934eab3842e6
+c9f22c0d54ca9d0f
+0ba097fd89b1b68a
+2a8e76682bec62a0
+a25033e142e3de08
+40b8513dd99c8f47
+efcb15ed790a5b41
+a08aed3615506abd
+1af3d162278c01d2
+e4a8d29997b748a4
+40a5e3d153290512
+c8645f2e9c5bdb16
+2e3b358f65c2b64e
+7cad5fab1b31103a
+53eabeac81edc60b
+58fb581a9bb5accb
+1150c5917c5295c4
+d0911c9cb416513c
+65e780283e469984
+dda6b3ad3ceaca46
+71824e5cd2fe04e3
+838b2d744e9d0d7f
+29c39452daa76b14
+f505c3809afec397
+6763a057f1062d55
+7df9745adeeb6d10
+4fea869d178a245c
+33f590526f2317a7
+af63a5c7f44f9a98
+98473e0392dab560
+164184551c445fcd
+a19dc55ffabc0098
+39ce182c6023307c
+b9ddfecda5acd9a3
+8651d46566a82e5e
+89a39340f03ea23a
+692c0f95ac9b8603
+979bc92274581101
+05b5a40d79ef2c07
+e64fa8bbceda7543
+0f672d0ccc157a92
+a7c6972079fe70a6
+6c0f83a49514d5f9
+00c61fb3c506e081
+c862901c350f2645
+bed44d9c1df7f8d5
+4904ba08d5e547f7
+f4d21eaaf499d800
+275b3c7c3d5018bc
+73d18ec64ac29273
+632fbb18697a5f48
+c3bef06086efd29b
+70180b3e36e97d1c
+df2e5334b7fc4751
+9065dd9cad97ea1f
+f1e60c71343d1558
+6c806323f7751bc2
+fe2d1eaf2197f07f
+c41e865d4d2b9a2d
+3d7a9bc0f1c73974
+19d296118690fbdd
+b3cb00304450afa9
+938361b24c0ad595
+b1780ec4a80c722d
+3ec1f3e12c2e8c9a
+c070afa7b4d579af
+1d70543f9d57bb6d
+16241ab40c6eeadd
+7d447ea235fe3f47
+0424ec0513a05c51
+------------------------
+
+
+ipg:          46
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+---------------------IS BUG DETECTED ? --------------------------------------
+NO: Packet length transmitted matched packet length received.
+---------------------------NO-----------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------
+SCOREBOARD RESULT
+----------------------------------------------
+Number of packets transmitted: 4
+Number of packets received   : 4
+Number of packets checked    : 4
+All packets recieved sucessfully.
+----------------------------------------------
+
+$finish called from file "../testbench/verilog/env.sv", line 50.
+
+TESTCASE: ----------------- OVERSIZE PACKET -----------------------
+
+TESTCASE: ----------------- End Of Simulation -----------------
+TESTCASE: Number of mismatched packets :  0
+TESTCASE: ---------------------- NO BUG: TESTPASS -----------------------
+
+$finish at simulation time             46368000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 46368000 ps
+CPU Time:      0.450 seconds;       Data structure size:   0.1Mb
+Thu Sep  8 23:20:48 2022
+CPU time: .787 seconds to compile + .377 seconds to elab + .200 seconds to link + .486 seconds in simulation
