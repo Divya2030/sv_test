@@ -1,0 +1,2 @@
+[Error]Another session is already running or previous run had some issues. Please check [vcst_rtdb/session.lock] for more information.
+Check ProcessId : [4355] is still running on HostMachine : [VLSI04.ucsc-extension.edu], if not remove vcst_rtdb/session.lock

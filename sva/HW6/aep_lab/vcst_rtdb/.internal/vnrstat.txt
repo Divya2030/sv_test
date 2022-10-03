@@ -1,0 +1,118 @@
+M is representing peak till the message
+Malloc-M represents malloc memory at the message
+STATS:: before LicenseMgr Init : M=896.676mb, Malloc-M=11mb, T=0s
+STATS:: after  LicenseMgr Init : M=902.461mb, Malloc-M=12mb, T=1s
+M is representing peak till the message
+Malloc-M represents malloc memory at the message
+STATS:: before Analyze M=1299.48mb, Malloc-M=256mb, T=0s
+STATS:: after  Analyze M=1299.48mb, Malloc-M=256mb, T=0s
+STATS:: before Load VCS Message: M=1299.48mb, Malloc-M=256mb, T=0s
+STATS:: after  Load VCS Message: M=1299.48mb, Malloc-M=256mb, T=0s
+STATS:: before Elaborate : M=1300.95mb, Malloc-M=259mb, T=0s
+STATS:: after  Elaborate : M=1301.13mb, Malloc-M=259mb, T=2s
+STATS:: before Load VCS Message: M=1301.13mb, Malloc-M=259mb, T=0s
+STATS:: after  Load VCS Message: M=1301.2mb, Malloc-M=259mb, T=0s
+STATS:: before LoadCircuitModel : M=1301.2mb, Malloc-M=259mb, T=0s
+STATS:: after  LoadCircuitModel : M=1301.32mb, Malloc-M=259mb, T=0s
+STATS:: before BuildNetlist : M=1301.32mb, Malloc-M=259mb, T=0s
+STATS:: |   before Build Mgr : M=1301.32mb, Malloc-M=259mb, T=0s
+STATS:: |   after  Build Mgr : M=1302.94mb, Malloc-M=261mb, T=0s
+STATS:: |   before Cell properties : M=1302.94mb, Malloc-M=261mb, T=0s
+STATS:: |   after  Cell properties : M=1302.94mb, Malloc-M=261mb, T=0s
+STATS:: after  BuildNetlist : M=1302.94mb, Malloc-M=261mb, T=0s
+STATS:: before PropertyLoad: Formal Property : M=1302.94mb, Malloc-M=261mb, T=0s
+STATS:: after  PropertyLoad: Formal Property : M=1302.94mb, Malloc-M=261mb, T=0s
+STATS:: before PropertyLoad: Formal Property : M=1303mb, Malloc-M=261mb, T=0s
+STATS:: after  PropertyLoad: Formal Property : M=1303.29mb, Malloc-M=261mb, T=0s
+STATS:: before PropertyLoad: Formal Property : M=1303.29mb, Malloc-M=261mb, T=0s
+STATS:: after  PropertyLoad: Formal Property : M=1303.29mb, Malloc-M=261mb, T=0s
+STATS:: before StaticCheck: StaticCheckProcess : M=1303.29mb, Malloc-M=261mb, T=0s
+STATS:: |   before StaticCheck: NldfgFlatDesign : M=1303.29mb, Malloc-M=261mb, T=0s
+STATS:: |   |   before StaticCheck: createFlatDesign : M=1303.29mb, Malloc-M=261mb, T=0s
+STATS:: |   |   after  StaticCheck: createFlatDesign : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   |   before StaticCheck: legalize : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   |   after  StaticCheck: legalize : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   |   before StaticCheck: computeNetEquivalences : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   |   after  StaticCheck: computeNetEquivalences : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   |   before StaticCheck: eliminateBidirectionals : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   |   after  StaticCheck: eliminateBidirectionals : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   after  StaticCheck: NldfgFlatDesign : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   before StaticCheck: MultiDriverCheck  : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   after  StaticCheck: MultiDriverCheck  : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   before StaticCheck: CombLoopCheck  : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: |   after  StaticCheck: CombLoopCheck  : M=1312.39mb, Malloc-M=271mb, T=0s
+STATS:: after  StaticCheck: StaticCheckProcess : M=1312.39mb, Malloc-M=261mb, T=0s
+STATS:: before populate SSF data: M=1312.39mb, Malloc-M=261mb, T=0s
+STATS:: after  populate SSF data: M=1312.39mb, Malloc-M=261mb, T=0s
+STATS:: before DumpGateCountStats : M=1312.39mb, Malloc-M=261mb, T=0s
+STATS:: after  DumpGateCountStats : M=1312.39mb, Malloc-M=261mb, T=0s
+STATS:: before ModuleDesignPropagation : M=1312.45mb, Malloc-M=271mb, T=0s
+STATS:: after  ModuleDesignPropagation : M=1312.45mb, Malloc-M=271mb, T=0s
+STATS:: before nlsim build : M=1312.59mb, Malloc-M=271mb, T=0s
+STATS:: after  nlsim build : M=1320.56mb, Malloc-M=279mb, T=0s
+STATS:: before nlsim run : M=1320.56mb, Malloc-M=279mb, T=0s
+STATS:: after  nlsim run : M=1324.53mb, Malloc-M=283mb, T=0s
+STATS:: before nlsim writeState : M=1324.59mb, Malloc-M=283mb, T=0s
+STATS:: after  nlsim writeState : M=1334.09mb, Malloc-M=284mb, T=0s
+STATS:: before Check: check_fv : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   before Check: BuildFormal : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   before Check: ResetSetup : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   |   before Check: EnvInstrumentation : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   |   after  Check: EnvInstrumentation : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   after  Check: ResetSetup : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   before Check: BotEotInstr : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   after  Check: BotEotInstr : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   before Check: VPReset : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   after  Check: VPReset : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   before Check: FormalModel : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   |   before DfgBuild: Setup : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   |   after  DfgBuild: Setup : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   |   before DfgBuild: Flatten : M=1334.09mb, Malloc-M=287mb, T=0s
+STATS:: |   |   |   after  DfgBuild: Flatten : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   before DfgBuild: ClockSetup : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   after  DfgBuild: ClockSetup : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   before DfgBuild: Modeling : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   after  DfgBuild: Modeling : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   before DfgBuild: FlatRemodel : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   after  DfgBuild: FlatRemodel : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   before DfgBuild: NldfgBuild : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   before NldfgBuild : Print statistics M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   after  NldfgBuild : Print statistics M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   before NldfgBuild : Cutpoint Insertion M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   after  NldfgBuild : Cutpoint Insertion M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   before NldfgBuild : Compute net equivalences M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   after  NldfgBuild : Compute net equivalences M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   before NldfgBuild : Eliminate bidirectionals M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   after  NldfgBuild : Eliminate bidirectionals M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   before NldfgBuild : Remove false combo loops M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   after  NldfgBuild : Remove false combo loops M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   before NldfgBuild : Create dfg M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Create graph M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Create graph M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Create terminal sinks and sources M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Create terminal sinks and sources M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Compute dependencies M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Compute dependencies M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Compute combinational SCCs M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Compute combinational SCCs M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Compute templates M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Compute templates M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Eliminate combinational SCCs M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Eliminate combinational SCCs M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Computing sequential SCCs M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Computing sequential SCCs M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : Create simulator clocks, changeAts and Triggers M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : Create simulator clocks, changeAts and Triggers M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   before NldfgBuild : SymSimulator Analysis and computation M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   |   |   after  NldfgBuild : SymSimulator Analysis and computation M=1342.1mb, Malloc-M=297mb, T=0s
+STATS:: |   |   |   |   after  NldfgBuild : Create dfg M=1342.1mb, Malloc-M=297mb, T=0s
+STATS:: |   |   |   after  DfgBuild: NldfgBuild : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   before DfgBuild: DfgRemodel : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   |   after  DfgBuild: DfgRemodel : M=1342.1mb, Malloc-M=296mb, T=0s
+STATS:: |   |   after  Check: FormalModel : M=1342.1mb, Malloc-M=287mb, T=0s
+STATS:: |   after  Check: BuildFormal : M=1342.1mb, Malloc-M=287mb, T=0s
+STATS:: |   before Check: GCDB : M=1342.1mb, Malloc-M=287mb, T=0s
+STATS:: |   after  Check: GCDB : M=1342.1mb, Malloc-M=287mb, T=0s
+STATS:: |   before Check: Tanglewood : M=1342.1mb, Malloc-M=287mb, T=0s
+STATS:: |   after  Check: Tanglewood : M=1342.1mb, Malloc-M=287mb, T=0s
+STATS:: after  Check: check_fv : M=1342.1mb, Malloc-M=287mb, T=0s

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DfgsimReport>
+	<v1>
+		<TriggeredProps>
+			<signal>parallel_case_0</signal>
+			<time>1000</time>
+		</TriggeredProps>
+		<Signal-Groups>
+			<Group name="Most-Toggled-Registers">
+				<signal>din_d</signal>
+			</Group>
+			<Group name="Constant-Inputs">
+				<signal>din</signal>
+				<signal>rst</signal>
+			</Group>
+		</Signal-Groups>
+	</v1>
+</DfgsimReport>

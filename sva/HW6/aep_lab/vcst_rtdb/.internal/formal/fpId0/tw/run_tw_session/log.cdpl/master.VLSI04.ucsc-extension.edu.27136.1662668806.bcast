@@ -1,0 +1,10 @@
+# Master Broadcast File
+time 1662668806
+pid 27136
+log /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.cdpl/master.VLSI04.ucsc-extension.edu.27136.log.gz
+tcp 10.20.250.17:38064
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+status done

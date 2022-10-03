@@ -1,0 +1,8 @@
+dware: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dware/lib
+gtech: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/gtech/lib
+dw01: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/dw01/lib
+dw02: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/dw02/lib
+dw03: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/dw03/lib
+dw04: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/dw04/lib
+dw05: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/dw05/lib
+dw06: /usr/synopsys/vc_static/S-2021.09-SP1/packages/DW/linux64/packages/dw/dw06/lib

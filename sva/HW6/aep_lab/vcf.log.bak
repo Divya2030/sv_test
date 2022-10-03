@@ -1,0 +1,113 @@
+
+                                   VC Static 
+
+               Version S-2021.09-SP1 for linux64 - Nov 26, 2021 
+
+                    Copyright (c) 2010 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+restore_session -level default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MasterSourceFile test.tcl
+# Tool setup variables
+set_fml_appmode AEP
+set_app_var fml_mode_on true
+set_fml_var fml_vacuity_on true
+set_fml_var fml_witness_on true
+#Read design file
+# fill this section
+analyze -format sverilog -vcs {-f filelist -assert svaext }
+#
+# #4. Elaborate with aep enabled
+elaborate aep_top -aep all
+[Warning] COM_OPT009: 'search_path' has not been set.
+[Warning] COM_OPT010: 'link_library' has not been set.
+Doing common elaboration 
+Info: Invoking Vlog AEP Instrument...
+Info: Vlog AEP Extraction Start
+Info: Vlog AEP Extraction Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+=======================================================
+VCS CPU Time(s)     :0.21
+SIMON CPU Time(s)   :0.13
+SIMON Total Time(s) :0.03
+Peak Memory(MB)     :381
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:aep_top.
+[Warning] FDC_MDN: Design has 3 multidriven net(s). Use 'report_fv_setup -check multi_driver' for further information.
+	Please check the design to confirm if they are real issues.
+#
+# #3. Enter clock/reset info:
+# # Declare clock/reset
+# # fill this section
+create_clock clk -period 1000
+create_reset rst -high
+#
+# #5. Start the run
+sim_run -stable
+[Info] SIM_I_CREATE: Create Simulation Model.
+sim_save_reset
+# #check_fv
+#
+# #6. Results
+# # Save initial state
+# report_cov -verbose
+report_fv -list > results_aep.txt
+
+action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
+action aaVerdiWaitAnnotation -trigger
+action aaMonetSetReuseWave -data {}
+action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
+report_constant -xml > /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/verdi/constant.xml ; verdi_cmd verdiVcstConstantReport -xmlFile /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/verdi/constant.xml
+check_fv
+[Info] FORMAL_I_CREATE: Create Formal Model:aep_top.
+[Warning] POTENTIAL_SETUP_ISSUES: There are potential setup issues. Please run check_fv_setup to confirm.
+	  Reset: 1  Clock: 0  Glitch: 0  Osc_loop: 0  Osc_seq: 0
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv
+	  Id: 0  Goals: 17  Constraints: 0  Block Mode: false
+[Info] LIC_UNUSED_WORKERS: 8 unused worker(s) based on 1 license(s) checked out, and 4 workers requested.
+	Use 'set_grid_usage' to maximize worker usage and improve performance, if there are sufficient compute resources to support more workers.
+	Each runtime license supports 12 workers.
+[Info] LIC_RT_CHECKOUT: VC Formal run time license checkout. Base:1  AEP:1.
+view_trace -property {aep_top.aep_bounds.bounds_check_0} -composite
+view_trace -property {aep_top.aep_parallel.parallel_case_0} -composite
+=======================================================
+Total Time(S)  :651.94
+CPU Time(S)    :7.10
+Peak Memory(MB):1333
+========================Formal=========================
+Engine Wall Time(S)    :6.09
+Engine Peak Memory(MB) :92
+=======================================================

@@ -1,0 +1,10 @@
+Command Line: /usr/synopsys/vc_static/S-2021.09-SP1/verdi/platform/LINUXAMD64/bin/fsdbextract /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb -time_shift 1000 -o shift.fsdb
+uname(Linux VLSI04.ucsc-extension.edu 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed Apr 27 20:34:34 UTC 2022 x86_64)
+First time to read tree time 0.000056 0.000034 0.000021 delta 2686976 2686976 total 161099776 161099776
+fsdbextract:Find signals time 0.003975 0.001000 0.000985 delta 1867776 1867776 total 175198208 175198208
+Load signals(0)-(1500) time 0.001328 0.000129 0.002989 delta 16097280 16097280 total 191295488 191295488
+Write signals(0)-(1500) time 0.000161 0.000000 0.000161 delta 1048576 1048576 total 192344064 192344064
+Unload signals(0)-(1500) time 0.000015 0.000000 0.000015 delta 0 0 total 192344064 192344064
+fsdbextract:Retrieve VC time 0.001607 0.000175 0.003222 delta 17145856 17145856 total 192344064 192344064
+fsdbextract main program time 0.123006 0.010691 0.009699 delta 55959552 55959552 total 167153664 167153664
+au time 0.123143 0.010765 0.009760 delta 55959552 55959552 total 167153664 167153664

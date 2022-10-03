@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<File version="1">
+	<State>
+		<Pair vector="256'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="dut1.queue" />
+		<Pair vector="1'b0" name="dut1.full" />
+		<Pair vector="1'b1" name="dut1.empty" />
+		<Pair vector="32'b00000000000000000000000000000000" name="dut1.dout" />
+		<Pair vector="2'b00" name="dut1.state" />
+		<Pair vector="1'b0" name="dut2.full" />
+		<Pair vector="256'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="dut2.queue" />
+		<Pair vector="2'b00" name="dut2.state" />
+		<Pair vector="1'b1" name="dut2.empty" />
+		<Pair vector="32'b00000000000000000000000000000000" name="dut2.dout" />
+		<Pair vector="1'b1" name="_BM_CLKGEN_.CSR0_2" />
+		<Pair vector="1'b0" name="_SVAC_3_ended_reg_0" />
+		<Pair vector="1'b0" name="_SVAC_3_ended_reg" />
+		<Pair vector="1'b0" name="_SVAC_2_ended_reg" />
+		<Pair vector="1'b0" name="_SVAC_1_ended_reg_0" />
+		<Pair vector="1'b0" name="_SVAC_2_ended_reg_0" />
+		<Pair vector="1'b0" name="_SVAC_1_ended_reg" />
+		<Pair vector="3'b000" name="dut1.head" />
+		<Pair vector="3'bxxx" name="dut1.tail" />
+		<Pair vector="3'b000" name="dut2.head" />
+		<Pair vector="3'bxxx" name="dut2.tail" />
+	</State>
+	<Input>
+		<Pair vector="1'bx" name="clk" />
+		<Pair vector="1'bx" name="deq" />
+		<Pair vector="32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" name="din" />
+		<Pair vector="1'bx" name="enq" />
+		<Pair vector="1'b0" name="rstn" />
+		<Pair vector="1'bx" name="_SVAC_3_states_0" />
+		<Pair vector="1'bx" name="_SVAC_1_states_0" />
+		<Pair vector="1'bx" name="_SVAC_2_states_0" />
+		<Pair vector="1'b1" name="_atZero" />
+		<Pair vector="1'bx" name="_SVAC_1_states" />
+		<Pair vector="1'bx" name="_SVAC_2_states" />
+		<Pair vector="1'bx" name="_SVAC_3_states" />
+	</Input>
+</File>

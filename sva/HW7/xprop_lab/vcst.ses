@@ -1,0 +1,76 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_S-2021.09-SP1
+[KeyNote]
+Line1 = Save Open Database Information: Yes
+Line2 = Path Option: Absolute Paths
+Line3 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[Verdi_1]
+workMode = FormalVerification
+[Xprop_Option]
+Xprop_Value = tmerge
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[fvGeneral]
+vcStaticShellOptions = -demo -file test.tcl -prompt vcf -fmode _default -new_verdi_comm
+[hb]
+viewport = 0 0 1252 579 0 0 122 1141
+activeNode = "top"
+activeFile = ".vcst_rtdb/cov_debug/COV_UA_Auto_090722_00:54.el"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = False
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = False
+userAnnot = True
+userAnnotField = 2
+uddbFile = .vcst_rtdb/.internal/verdi/constant.uddb
+SourceVerticalScrollLines = 5
+Scope1 = "top"
+rangeSelection = 1 1 1 53 1 2
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-smart_load_kdb" "-dbdir" ".vcst_rtdb/.internal/design/top.exe.daidir" 
+invokeDir = /home/sv11108/HW7/xprop_lab
+[hb.sourceTab.1]
+File = .vcst_rtdb/cov_debug/COV_UA_Auto_090722_00:54.el
+Line = 1
+[vcst.general]
+activeTaskName = FPV
+[vcst_section]
+vcst_session = TRUE
+vcst_session_file = vcst
+vcst_appmode = FPV
+vcst_analyzerInfo = 
+vcst_traceAnalysisInfo = 

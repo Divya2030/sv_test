@@ -1,0 +1,10 @@
+13:22:29 : action aaMonetBanffPrepareTrace -trace {aep_top.aep_bounds.bounds_check_0|property}
+13:22:34 : beginFsdbExtract Time:1662668549.953415
+13:22:34 : endFsdbExtract Time:1662668550.113595
+13:22:34 : beginEViewWaveTask Time:1662668554.858234
+13:22:58 : endEViewWaveTask Time:1662668578.33399
+13:23:21 : action aaMonetBanffPrepareTrace -trace {aep_top.aep_parallel.parallel_case_0|property}
+13:23:22 : beginFsdbExtract Time:1662668602.298184
+13:23:24 : endFsdbExtract Time:1662668602.458824
+13:23:24 : beginEViewWaveTask Time:1662668604.327100
+13:23:29 : endEViewWaveTask Time:1662668609.945088

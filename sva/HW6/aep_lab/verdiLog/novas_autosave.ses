@@ -1,0 +1,100 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_S-2021.09-SP1
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = FALSE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[Verdi_1]
+workMode = FormalVerification
+[Xprop_Option]
+Xprop_Value = tmerge
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb.vf
+syncTime = 0
+viewport = 8 31 1254 597 0 0 115 1250
+activeNode = "aep_top"
+activeScope = "aep_top"
+activeFile = "rtl/aep_top.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = True
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = False
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = False
+userAnnot = True
+userAnnotField = 2
+uddbFile = /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/verdi/constant.uddb
+SourceVerticalScrollLines = 5
+Scope1 = "aep_top"
+multipleSelection = 1 0 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-smart_load_kdb" "-dbdir" "/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/design/aep_top.exe.daidir" 
+invokeDir = /home/sv11108/HW6/aep_lab
+[hb.sourceTab.1]
+scope = aep_top
+File = /home/sv11108/HW6/aep_lab/rtl/aep_top.v
+Line = 1
+[nMemoryManager]
+WaveformFile = /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb.vf
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 25 1254 191 320 160
+primaryWindow = TRUE
+SessionFile = /home/sv11108/HW6/aep_lab/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
+fsaRegMask = TRUE
+fsaCoreMask = TRUE
+fsaSfsmMask = TRUE
+fsaEcrMask = TRUE

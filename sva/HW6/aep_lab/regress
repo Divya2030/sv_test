@@ -1,0 +1,1 @@
+vcf -full64 -f test.tcl -gui &

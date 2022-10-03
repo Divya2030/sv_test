@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<File version="1">
+	<Delimiter character="." />
+	<State />
+	<Input />
+	<Cex cycCount="3">
+		<Cycle time="0">
+			<Pair vector="2'b10" name="din" />
+		</Cycle>
+		<Cycle time="1">
+			<Pair vector="2'b10" name="din" />
+		</Cycle>
+		<Cycle time="2">
+			<Expect>
+				<Pair vector="1'b1" name="aep_parallel.mgaep_paracase_mgvcm_0" alias="parallel_case_0" path="aep_parallel" srcProp="0" successTrace="0" />
+			</Expect>
+		</Cycle>
+	</Cex>
+</File>

@@ -1,0 +1,17 @@
+13:13:01 : gui:VLSI04.ucsc-extension.edu:41769
+13:13:01 : ___vcstRenameMan
+13:13:04 : MasterSourceFile test.tcl
+13:17:29 : action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
+13:17:31 : get_snips -verdi
+13:17:32 : get_blackbox -designs -verdi
+13:17:32 : get_glassbox -verdi
+13:17:32 : get_snips -verdi
+13:17:32 : action aaVerdiWaitAnnotation -trigger
+13:17:32 : action aaMonetSetReuseWave -data {}
+13:17:33 : action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
+13:17:33 : report_constant -xml > /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/verdi/constant.xml ; verdi_cmd verdiVcstConstantReport -xmlFile /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/verdi/constant.xml
+13:17:34 : ___vcDisplayAbstractSrcFromAutoBBox
+13:22:16 : check_fv
+13:22:16 : ___fvReportGridUsage /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/verdi/gridUsage.xml0
+13:22:29 : view_trace -property {aep_top.aep_bounds.bounds_check_0} -composite
+13:23:21 : view_trace -property {aep_top.aep_parallel.parallel_case_0} -composite

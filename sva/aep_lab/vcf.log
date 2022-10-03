@@ -1,0 +1,33 @@
+
+                                   VC Static 
+
+               Version Q-2020.03-SP2 for linux64 - Aug 31, 2020 
+
+                    Copyright (c) 2010 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+restore_session -level default
+
+
+
+
+
+
+
+
+
+check_fv
+[Warning] DB_COPT056: No design(s) found.
+	Please load design and try again.
+[Error] DESIGN_E_NOT_LOADED: Design not loaded, 'check_fv' command is aborted.
+	Please load the design first using read_file or elaborate commands and rerun.
+Error: 0
+	Use error_info for more info. (CMD-013)
+exit
+=======================================================
+Total Time(S)  :19.97
+CPU Time(S)    :1.32
+Peak Memory(MB):1166
+=======================================================

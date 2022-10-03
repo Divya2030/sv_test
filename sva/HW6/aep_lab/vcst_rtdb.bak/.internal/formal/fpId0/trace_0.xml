@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<File version="1">
+	<Delimiter character="." />
+	<State />
+	<Input />
+	<Cex cycCount="1">
+		<Cycle time="0">
+			<Pair vector="2'bx1" name="din" />
+			<Expect>
+				<Pair vector="1'b1" name="aep_bounds.mgaep_boundchk_mgvcm_2" alias="bounds_check_0" path="aep_bounds" srcProp="0" successTrace="0" />
+			</Expect>
+		</Cycle>
+	</Cex>
+</File>

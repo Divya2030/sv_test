@@ -1,0 +1,159 @@
+<ICD>
+ <SystemReset name="" value=""/>
+ <Module name="aep_bounds" DesignLang="Verilog" FileName="rtl/aep_bounds.v" LineNo="1">
+  <ModuleVariant name="aep_bounds" CheckerModule="">
+   <Property name="bounds_check_0" type="bounds_check" FileName="rtl/aep_bounds.v" LineNo="12">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_boundchk_mgvcm_2" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_boundchk_mgvcm_2"/>
+     <AEPEncoding>
+      <AEPNode expr="memA[sigB]" index="sigB" assume_index="sigB#0#1"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="bounds_check_1" type="bounds_check" FileName="rtl/aep_bounds.v" LineNo="13">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_boundchk_mgvcm_3" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_boundchk_mgvcm_3"/>
+     <AEPEncoding>
+      <AEPNode expr="memA[din[0]]" index="din[0]" assume_index="din[0]#0#1"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="bounds_check_2" type="bounds_check" FileName="rtl/aep_bounds.v" LineNo="18">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_boundchk_mgvcm_0" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_boundchk_mgvcm_0"/>
+     <AEPEncoding>
+      <AEPNode expr="memA[i]" index="i" assume_index="i#0#1"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="bounds_check_3" type="bounds_check" FileName="rtl/aep_bounds.v" LineNo="21">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_boundchk_mgvcm_1" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_boundchk_mgvcm_1"/>
+     <AEPEncoding>
+      <AEPNode expr="memA[din]" index="din" assume_index="din#0#1"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <VariantInstance name="aep_top.aep_bounds" FileName="rtl/aep_bounds.v" LineNo="1">
+    <Property name="bounds_check_0"/>
+    <Property name="bounds_check_1"/>
+    <Property name="bounds_check_2"/>
+    <Property name="bounds_check_3"/>
+   </VariantInstance>
+  </ModuleVariant>
+ </Module>
+ <Module name="aep_full" DesignLang="Verilog" FileName="rtl/aep_full.v" LineNo="1">
+  <ModuleVariant name="aep_full" CheckerModule="">
+   <Property name="full_case_0" type="full_case" FileName="rtl/aep_full.v" LineNo="8">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_fullcase_mgvcm_0" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_fullcase_mgvcm_0"/>
+     <AEPEncoding>
+      <AEPNode expr="din"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="full_case_1" type="full_case" FileName="rtl/aep_full.v" LineNo="15">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_fullcase_mgvcm_1" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_fullcase_mgvcm_1"/>
+     <AEPEncoding>
+      <AEPNode expr="din"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="full_case_2" type="full_case" FileName="rtl/aep_full.v" LineNo="23">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_fullcase_mgvcm_2" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_fullcase_mgvcm_2"/>
+     <AEPEncoding>
+      <AEPNode expr="din"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <VariantInstance name="aep_top.aep_full" FileName="rtl/aep_full.v" LineNo="1">
+    <Property name="full_case_0"/>
+    <Property name="full_case_1"/>
+    <Property name="full_case_2"/>
+   </VariantInstance>
+  </ModuleVariant>
+ </Module>
+ <Module name="aep_parallel" DesignLang="Verilog" FileName="rtl/aep_parallel.v" LineNo="1">
+  <ModuleVariant name="aep_parallel" CheckerModule="">
+   <Property name="parallel_case_0" type="parallel_case" FileName="rtl/aep_parallel.v" LineNo="9">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_paracase_mgvcm_0" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_paracase_mgvcm_0"/>
+     <AEPEncoding>
+      <AEPNode expr="din"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="parallel_case_1" type="parallel_case" FileName="rtl/aep_parallel.v" LineNo="15">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_paracase_mgvcm_1" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_paracase_mgvcm_1"/>
+     <AEPEncoding>
+      <AEPNode expr="din"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <VariantInstance name="aep_top.aep_parallel" FileName="rtl/aep_parallel.v" LineNo="1">
+    <Property name="parallel_case_0"/>
+    <Property name="parallel_case_1"/>
+   </VariantInstance>
+  </ModuleVariant>
+ </Module>
+ <Module name="aep_x" DesignLang="Verilog" FileName="rtl/aep_x.v" LineNo="1">
+  <ModuleVariant name="aep_x" CheckerModule="">
+   <Property name="x_assign_0" type="x_assign" FileName="rtl/aep_x.v" LineNo="6">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_xassign_mgvcm_0" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_xassign_mgvcm_0"/>
+     <AEPEncoding>
+      <AEPNode expr="sigX &lt;= 1'bx;"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <Property name="x_assign_1" type="x_assign" FileName="rtl/aep_x.v" LineNo="8">
+    <RegInitializations>
+     <RegInitialization signal="mgaep_xassign_mgvcm_1" rhs="1'b0"/>
+    </RegInitializations>
+    <PropertyEncoding type="">
+     <EndedSignal signal="mgaep_xassign_mgvcm_1"/>
+     <AEPEncoding>
+      <AEPNode expr="sigX &lt;= 1'bx;"/>
+     </AEPEncoding>
+    </PropertyEncoding>
+   </Property>
+   <VariantInstance name="aep_top.aep_x" FileName="rtl/aep_x.v" LineNo="1">
+    <Property name="x_assign_0"/>
+    <Property name="x_assign_1"/>
+   </VariantInstance>
+  </ModuleVariant>
+ </Module>
+</ICD>

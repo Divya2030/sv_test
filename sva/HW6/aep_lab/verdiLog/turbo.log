@@ -1,0 +1,3 @@
+Command Line: /usr/synopsys/vc_static/S-2021.09-SP1/verdi/platform/LINUXAMD64/bin/Novas -vcst -vcstOpts {-demo -mode64 -file test.tcl -prompt vcf -fmode _default -new_verdi_comm} -lca
+uname(Linux VLSI04.ucsc-extension.edu 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed Apr 27 20:34:34 UTC 2022 x86_64)
+au time 724.124462 14.727444 5.692389 delta 422051840 422051840 total 926240768 926240768

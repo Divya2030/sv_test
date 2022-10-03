@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/synopsys/vc_static/S-2021.09-SP1/linux64/ctg/bin/tw_slave -exeDir /usr/synopsys/vc_static/S-2021.09-SP1/linux64/ctg/bin -workDir /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.tw-slave -mgHome /usr/synopsys/vc_static/S-2021.09-SP1 -ydLogDir /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.tw-to-yd -tipCutCone -encryptLogs -glHome /usr/synopsys/vc_static/S-2021.09-SP1 -traceCompression -seqaigCompression -bmcMessages -logTimestamps -handshakeTimeout 1200 -skipLowerDepthMsg 3

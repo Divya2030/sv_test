@@ -1,0 +1,19 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/sv11108/HW7/xprop_lab
+VCS_HOME=/usr/synopsys/vc_static/S-2021.09-SP1/vcs-mx
+VERDI_HOME=/usr/synopsys/vc_static/S-2021.09-SP1/verdi
+SystemC=FALSE
+UUM=TRUE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+ENV="SYNOPSYS_SIM_SETUP=/home/sv11108/HW7/xprop_lab/vcst_rtdb/.internal/design/synopsys_sim.setup" 
+TOP=top 
+ELAB=TRUE
+COMMON_ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

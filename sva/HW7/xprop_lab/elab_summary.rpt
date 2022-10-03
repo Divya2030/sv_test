@@ -1,0 +1,33 @@
+###############################################################
+ # This report contains names of design units along with parameter
+ # values and self instances.
+ # Some parameters may have more than one possible values for that
+ # design unit, values will be unique for instances. It is indicated as
+ # "Multiple Values".
+ # In some cases instance count shown may be less than actual instance
+ # count in the design due to optimizations. It is indicated as
+ # "Optimized".
+###############################################################
+
+
+Design Unit Name: 'top', (top.v:1)
+    Parameters (Total 1)
+        DWIDTH = 32  (default: 32)
+    Instances (Total: 0)
+=============================================
+
+
+Design Unit Name: 'queue', (xp.v:1)
+    Parameters (Total 6)
+        DWIDTH = 32  (default: 32)
+        POINTER_WIDTH = 3  (default: 3)
+        Q_DEPTH = 8  (default: 8)
+        EMPTY = 2'b0  (default: 2'b0)
+        NOT_EMPTY = 2'b1  (default: 2'b1)
+        FULL = 2'b10  (default: 2'b10)
+    Instances (Total 2)(Optimized)
+        top.dut1
+        top.dut2
+=============================================
+
+

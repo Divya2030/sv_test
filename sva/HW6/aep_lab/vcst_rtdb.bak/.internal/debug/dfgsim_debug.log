@@ -1,0 +1,104 @@
+Dfgsim command : 
+m_dfgfile : 
+m_tracefile : 
+m_fsdbfile : 
+m_auxfile : 
+m_seq_mapping_file : 
+m_seq_rca_size: 5
+m_addphases : 0
+m_timing : 0
+m_nox : 0
+m_inputdelay : -1
+m_timescale : 10
+m_glitchdelay : -1
+m_instrumented : 0
+m_instrumented_reg : 0
+m_interactive : 1
+m_exit : 0
+m_force : 1
+m_signalgroup : 1
+m_signalgroup_max_size : 20
+m_xprop : 0
+m_fsv : 0
+m_fault_id : 0
+m_fsv_bbox: m_fxp : 0
+m_debug : 0
+m_lp_xml : 
+m_snapshot_time : -1
+
+===============
+ReplayCmd=/usr/synopsys/vc_static/S-2021.09-SP1/linux64/dfgsim/bin/dfgsim -interactive -reset /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/reset.xml -trace /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml -dfg /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/design.dfg.sim -fsdb /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml.replay.fsdb -aux_output /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml.replay.fsdb.xml -nox  -time_scale 500 -input_delay 250 
+Load new dfgfile: /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/design.dfg.sim
+
+Info DFGSIM-001: Successfully read DFG from file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/design.dfg.sim'.
+read dfg time elapsed: 0seconds
+
+Info DFGSIM-003: Reading trace information file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml'.
+
+Info DFGSIM-003: Simulation trace '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml' successfully read.
+
+Info DFGSIM-002: Attaching reset information in file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/reset.xml' to DFG.
+Load new reset file.
+
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node '_atZero$driver_TMP_0$U'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_bounds.I_INDEX__ASN_12$X'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_multi.multi_out$X'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_float.I_BIF_sigD$X_ztox'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_float.I_z__ASN_6$X_ztox'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_multi.I_BIF_multi_out1_OP0$X_ztox'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_multi.I_BIF_multi_out1_OP1$X_ztox'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_multi.multi_out1$X'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_multi.I_BIF_multi_out_pass_OP0$X_ztox'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_multi.I_BIF_multi_out_pass_OP1$X_ztox'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_x.I_x_@DONTCARE_8$X'.
+Warning DFGSIM-009: Cannot find reset state for undriven/x-fail-node 'aep_x.I_x_@DONTCARE_6$X'.
+Info DFGSIM-002: Reset state successfully attached.
+read reset file elapsed: 0seconds
+read trace file elapsed: 0seconds
+Writing waveforms to FSDB file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml.replay.fsdb'.
+simcex time elapsed: 0seconds
+
+Info DFGSIM-014: Property bounds_check_0 triggered at time 0.
+
+Info DFGSIM-018: All properties sucessfully replayed.
+Coarse COI: 
+din
+
+COI size: 1
+Toggled Inputs size = 0
+Toggled Seqs size = 0
+debug signal group time elapsed: 0seconds
+Writing out aux XML data to : /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_0.xml.replay.fsdb.xml
+DFG_SIM_REPLAY_DONE
+
+===============
+ReplayCmd=/usr/synopsys/vc_static/S-2021.09-SP1/linux64/dfgsim/bin/dfgsim -interactive -reset /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/reset.xml -trace /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml -dfg /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/design.dfg.sim -fsdb /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb -aux_output /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb.xml -nox  -time_scale 500 -input_delay 250 
+
+Info DFGSIM-003: Reading trace information file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml'.
+
+Info DFGSIM-003: Simulation trace '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml' successfully read.
+
+Info DFGSIM-002: Attaching reset information in file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/reset.xml' to DFG.
+
+Info DFGSIM-002: Reset state successfully attached.
+read reset file elapsed: 0seconds
+read trace file elapsed: 0seconds
+Writing waveforms to FSDB file '/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb'.
+simcex time elapsed: 0seconds
+
+Info DFGSIM-014: Property parallel_case_0 triggered at time 1000.
+
+Info DFGSIM-018: All properties sucessfully replayed.
+Coarse COI: 
+rst
+din
+undef
+_BM_CLKGEN_.CSR0_2
+din_d
+
+COI size: 3
+Toggled Inputs size = 0
+Toggled Seqs size = 1
+debug signal group time elapsed: 0seconds
+Writing out aux XML data to : /home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/trace_7.xml.replay.fsdb.xml
+DFG_SIM_REPLAY_DONE

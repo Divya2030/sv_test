@@ -1,0 +1,53 @@
+;; Tanglewood started at Thu Sep  8 13:26:45 2022 with pid 27136.
+;; version QSCR 4032649 Thu Oct 28 02:13:14 2021
+;; mode client
+;; using R_2020.09_SP2_PROD_CDPL_BF5 
+;; using csc_4.11.0
+;; using MG_HOME /usr/synopsys/vc_static/S-2021.09-SP1
+;; using GL_HOME /usr/synopsys/vc_static/S-2021.09-SP1
+(tw-option-set! skip-lower-depth-msg-ext 3)
+(tw-option-set! tw-bh-random-workers 0)
+(tw-option-set! tw-bh-mode 0)
+(tw-option-set! tw-bh-randomize #f)
+(tw-option-set! upfront-worker-timeout 1)
+(tw-option-set! sss-mode 0)
+(tw-option-set! oct-mode 441)
+(tw-option-set! oct-point 9)
+(tw-option-set! seqaig-compression #t)
+(tw-option-set! tr-init-batch-size 10)
+(define max-mem-eng 8)
+(define llk-opts " -effort 0 -trace_effort 4 -abstract_size  -base_abstract_size  -abstract_depth  -max_tsccs  -max_seeds  -max_states 20 -max_traces 1 -trace_mode  -reorder 1")
+(define llk-enable 0)
+(define llk-gl? #t)
+(define llk-mg? #t)
+(define fast-mode? #f)
+(define glconflict-opts "-depth 4 -minimal 1 -reason 1")
+(tw-option-set! exe-dir "/usr/synopsys/vc_static/S-2021.09-SP1/linux64/ctg/bin")
+(tw-option-set! app-name "aep")
+(tw-option-set! engine-score-file "/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/fv_eng_score")
+(tw-option-set! cdpl-log-filter #f)
+(tw-option-set! cdpl-log-compress #t)
+(tw-option-set! replay-hints #t)
+(tw-option-set! all-results #t)
+(tw-option-set! peakmem-messages #t)
+(tw-option-set! crash-messages #t)
+(define gl-deadend-opts "-resetcycles 100 -maxcycles 1000  -ignoreOutputFail -lookahead 0")
+(define gl-deadend-debug-opts "-minimal 1 -reason 1 -depth 0")
+(tw-option-set! trace-compression #t)
+(tw-option-set! max-workers-per-property -1)
+(tw-option-set! tw-tool-version "2021.09")
+(define fta-om-flow #f)
+(tw-option-set! interactive-mode #t)
+(tw-option-set! full-interactive-mode #t)
+(tw:log-load-bfse "ENGINE-DB" "/usr/synopsys/vc_static/S-2021.09-SP1/auxx/ctg/tcl/tw_eng_db.enc")
+(tw:log-load-bfse "SCORE-FILE" "/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0/fv_eng_score")
+(acquire-dfg-vp 0 "/home/sv11108/HW6/aep_lab/vcst_rtdb/.internal/formal/fpId0" '())
+(tw-option-set! rma-extended-mode 17)
+(tw:log-load-bfse "RECIPE" "/usr/synopsys/vc_static/S-2021.09-SP1/auxx/ctg/orc/fv_pv_default_v4.scme")
+(tw-option-set! edb-dbase-id 50000)
+(tw-play)
+;; XF-PASS:1
+;; XF-PASS:2
+;; XF-PASS:3
+(tw-quit)
+;; Tanglewood stopped at Thu Sep  8 13:26:51 2022 after 6.208s (1.992  0.198)

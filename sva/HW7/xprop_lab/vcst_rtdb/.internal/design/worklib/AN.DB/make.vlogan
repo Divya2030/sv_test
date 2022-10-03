@@ -1,0 +1,17 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -kdb=common_elab -sverilog -skip_translate_body -assert svaext +define+SYNTHESIS -q -timescale=1ns/1ns -full64 -full64
+
+all :		_VCSgd_nGFE7b_1.db \
+	_VCSgd_Ekh9td_1.db \
+
+
+
+_VCSgd_nGFE7b_1.db :	top.v 
+		${VLOGAN}  ${VLOGAN_OPT} top.v
+
+
+_VCSgd_Ekh9td_1.db :	xp.v 
+		${VLOGAN}  ${VLOGAN_OPT} xp.v
+
+

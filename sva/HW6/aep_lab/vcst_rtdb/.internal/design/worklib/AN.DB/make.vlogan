@@ -1,0 +1,42 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -kdb=common_elab -sverilog -skip_translate_body -assert svaext +define+SYNTHESIS -q -timescale=1ns/1ns -full64 -full64
+
+all :		_VCSgd_dmHFBe_1.db \
+	_VCSgd_iA1fgb_1.db \
+	_VCSgd_ZPxWyc_1.db \
+	_VCSgd_VyKGgc_1.db \
+	_VCSgd_Q0OYkd_1.db \
+	_VCSgd_dPQsFc_1.db \
+	_VCSgd_Mccgcb_1.db \
+
+
+
+_VCSgd_dmHFBe_1.db :	rtl/aep_top.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_top.v
+
+
+_VCSgd_iA1fgb_1.db :	rtl/aep_full.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_full.v
+
+
+_VCSgd_ZPxWyc_1.db :	rtl/aep_parallel.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_parallel.v
+
+
+_VCSgd_VyKGgc_1.db :	rtl/aep_bounds.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_bounds.v
+
+
+_VCSgd_Q0OYkd_1.db :	rtl/aep_x.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_x.v
+
+
+_VCSgd_dPQsFc_1.db :	rtl/aep_multi.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_multi.v
+
+
+_VCSgd_Mccgcb_1.db :	rtl/aep_float.v 
+		${VLOGAN}  ${VLOGAN_OPT} rtl/aep_float.v
+
+

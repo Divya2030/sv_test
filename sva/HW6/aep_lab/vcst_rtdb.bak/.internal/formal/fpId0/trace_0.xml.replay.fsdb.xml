@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DfgsimReport>
+	<v1>
+		<TriggeredProps>
+			<signal>bounds_check_0</signal>
+			<time>0</time>
+		</TriggeredProps>
+		<Signal-Groups>
+			<Group name="Constant-Inputs">
+				<signal>din</signal>
+			</Group>
+		</Signal-Groups>
+	</v1>
+</DfgsimReport>

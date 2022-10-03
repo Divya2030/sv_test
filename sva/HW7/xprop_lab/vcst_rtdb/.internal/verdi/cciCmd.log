@@ -1,0 +1,17 @@
+03:00:25 : gui:VLSI04.ucsc-extension.edu:36139
+03:00:25 : ___vcstRenameMan
+03:00:26 : MasterSourceFile test.tcl
+03:00:30 : action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
+03:00:30 : get_snips -verdi
+03:00:30 : get_snips -verdi
+03:00:30 : ___vcDisplayAbstractSrcFromAutoBBox
+03:00:30 : get_blackbox -designs -verdi
+03:00:30 : get_glassbox -verdi
+03:00:30 : get_snips -verdi
+03:00:30 : action aaVerdiWaitAnnotation -trigger
+03:00:30 : action aaMonetSetReuseWave -data {}
+03:00:30 : action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
+03:00:31 : report_constant -xml > /home/sv11108/HW7/xprop_lab/vcst_rtdb/.internal/verdi/constant.xml ; verdi_cmd verdiVcstConstantReport -xmlFile /home/sv11108/HW7/xprop_lab/vcst_rtdb/.internal/verdi/constant.xml
+03:00:31 : check_fv
+03:00:31 : ___fvReportGridUsage /home/sv11108/HW7/xprop_lab/vcst_rtdb/.internal/verdi/gridUsage.xml0
+03:01:26 : report_fv -list > results_xprop.txt
